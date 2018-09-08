@@ -39,9 +39,9 @@ def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
 end
 
-def turn_count(index)
+def turn_count
   counter = 0
-  index.each do |space|
+  @board.each do |space|
  if space == "X" || space == "O"
  counter += 1
 end
