@@ -80,4 +80,10 @@ def full?
     space == "X" || space == "O"
   end
 end
+
+def draw?
+  !won? && full?
+end
+
+
 end
