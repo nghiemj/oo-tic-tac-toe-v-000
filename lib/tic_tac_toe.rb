@@ -88,4 +88,13 @@ end
 def over?
   won? || draw? || full?
 end
+
+def winner
+ if won? 
+    @board[won?[0]]
+  else 
+   nil
+  end
+end
+
 end
