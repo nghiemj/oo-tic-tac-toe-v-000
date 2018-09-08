@@ -55,5 +55,5 @@ def current_player
   else
     return "O"
   end
-  
+end
 end
