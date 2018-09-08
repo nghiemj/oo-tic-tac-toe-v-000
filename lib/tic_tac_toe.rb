@@ -75,4 +75,9 @@ def won?
   end
 end
 
+def full?
+  @board.all? do |space| 
+    space == "X" || space == "O"
+  end
+end
 end
